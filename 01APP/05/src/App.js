@@ -1,35 +1,13 @@
-import logo from "./logo.svg";
-import "./App.css";
-import onClickTest from "./Event/01onClick";
-import onMouseTest from "./Event/02onMouse";
-import onKeyTest from "./Event/03onKey";
-import onChangeTest from "./Event/04onChange";
-import onFormTest from "./Event/05formEvent";
-import onScrollTest from "./Event/06onScroll";
+import Basic01 from './Condition/01Basic';
 
 function App() {
   return (
     <div className="App">
-      {/* 01 Onclick */}
-      <onClickTest.MyComponent />
-      <hr />
-      {/* 01 OnMouse */}
-      <onMouseTest.MyComponent1 />
-      <onMouseTest.MyComponent2 />
-      <hr />
-      {/* 01 onKeyboard */}
-      <onKeyTest.MyComponent1 />
-      <onKeyTest.MyComponent2 />
-      <onKeyTest.MyComponent3 />
-      <hr />
-      {/* 01 onChange */}
-      <onChangeTest.MyComponent />
-      <hr />
-      {/* 01 onForm */}
-      <onFormTest.MyComponent />
-      <hr />
-      {/* 01 onScroll */}
-      <onScrollTest.MyComponent />
+      <Basic01.Component01 isAuth={false}/>
+      <hr/>
+      <Basic01.Component02 isAuth={true}/>
+      <hr/>
+      <Basic01.Component03 items={['a','b','c']}/>
     </div>
   );
 }
