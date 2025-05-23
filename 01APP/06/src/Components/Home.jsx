@@ -10,7 +10,10 @@ const Home = () => {
           </li>
 
           <li>
-            <Link to="/About">about</Link>
+            <Link to="/about?name=aaa&age=80">about</Link>
+          </li>
+          <li>
+            <Link to="/contact/Hwang/29">Contact</Link>
           </li>
         </ul>
       </nav>
